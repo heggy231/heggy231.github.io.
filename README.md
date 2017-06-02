@@ -1,2 +1,2 @@
 # heggy231.github.io <br>
-See the website at <a href = "heggy231.github.io">website</a> <br>
+See the website at <a href = "heggy.me">website</a> <br>
