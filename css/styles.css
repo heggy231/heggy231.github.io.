@@ -1,0 +1,202 @@
+/* Color Palette 
+#F7FC71 - Yellow
+#C8AAEF - light purple
+rgb(141, 70, 235) - dark purple
+#D8DCFF - purple/white
+#D9D0DE - grey/brown
+#EAE7D7 - beige/white
+#B58E5F - golden brown
+#7C693E - tree brown
+rgb(210, 210, 210) - light olive
+#E4E3C2 - warm olive
+#E8D0D9 - soft pink with olive undertone
+#474240 - Very dark grayish orange
+#323031 - JET
+*/
+
+/* Global styles
+---------------------------*/
+/* border box fix */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+	font-family: 'Barlow', sans-serif;
+	margin: 0; /* remove white boxing all around pg*/
+}
+h1, h2 {
+	font-family: 'Amatic SC', cursive;
+	font-weight: 400; /* normal font-weight */
+}
+h1 {
+	font-size: 80px;
+}
+h2 {
+	font-size: 40px; /* default font 16px*/
+	margin-top: 0; /* remove default margin space keep the spacing top/bottom equal */
+}
+h3{
+	margin: 0; /* get rid of any margin around elem */
+}
+a {
+	color: #E4E3C2; /* warm OLIVE */
+}
+a:hover {
+	text-decoration: none;
+}
+.content-wrap {
+	max-width: 950px; /* browser size responsive, max-width (instead of width) content 100% of container browser width until width 950px this fixes with the background color always covering content */
+	margin: 0 auto; /* to center content in viewport: 1st set max-width, margin top/bottom 0 r/l auto need to write these two twogether max-width and margin */
+	padding: 50px; /* top, r, bott, l*/
+	overflow: auto; /* parent element of header img and p.  floated elements is now self cleared for padding to show under the img */
+}
+
+/*  get rid of the margin spacing default
+h2, p {
+	margin: 0;
+} */
+.uppercase {
+	text-transform: uppercase;
+}
+.btn {
+	text-decoration: none; /* link default underline none*/
+	background: #323031;
+	padding: 10px; /* when adding padding to links remember to add display */
+	display: inline-block; /* to show the padding and not spill over to next section */
+}
+/* Header and Footer
+-------------------------------------*/
+header, footer {
+	background: #5C5552;
+	color: #DECBB7;
+}
+
+/* header */
+header {
+	padding-top: 50px;
+	position: relative; /* contain this relative within the header */
+}
+header h1, header h2 {
+	color: rgb(225, 208, 208);
+	margin: 0; /* rid of extra spacing */ 
+	
+}
+.profile-img {
+	/* width: 300px;*/ /* no need to set the height it will adjst its aspect ratio */
+	border-radius: 50%; /* make circle */
+	/* or */
+	/* border-radius: 6px; */ /* corners are rounded only*/
+	/* float: left; */
+	/* margin-right: 30px; */
+}
+/* header {
+	text-align: center;
+} */
+.download { /* d/l is part of button but specific just for this d/l */
+	position: absolute; /* position align link button d/l bottom right of header */
+	bottom: 0;
+	right: 0;
+}
+
+/* footer */
+footer {
+	text-align: center;
+}
+footer h1, footer h2 {
+	color: #EAE7D7;
+}
+.contact-info a {
+	/* background: white; */
+	padding: 10px;
+	display: inline-block; /* link is inline remember to add display inline-block for padding to show up*/
+}
+
+
+/* Navigation
+-------------------------------*/
+nav {
+	text-align: center;
+	background: #323031; /* dark brown; jet */
+	position: fixed;
+	top: 0; /* top offset property makes nav very top of the page */
+	width: 100%; /* nav bar to span the viewport*/
+	left: 0; /* fixed nav span all the way to left */
+	right: 0; /* fixed nav span all the way to right */
+}
+nav a {
+	display: inline-block;
+	padding: 15px 20px; /* top/bott, left/right give links some spacing */
+	/* get rid of link default look */
+	text-decoration: none; /* no underline */
+	text-transform: uppercase; /* capitalize */
+	font-weight: 700; /* 700 = keyword bold */
+}
+
+/* Work Experience
+-------------------------------*/
+.work {
+	background: #EAE7D7;
+}
+h3 ~ p { 
+	/* general selector (any p following) h3 regardless what other elements are in the way of p  */
+	margin: 0;
+}
+.work a {
+  color: #474240;
+}
+.job-description {
+	margin-bottom: 25px; /* space btwn job items consistent*/
+}
+.job-description p:first-of-type {
+	margin-top: 0; /* val of zero no need to add measurement unit*/
+}
+
+
+/* Education
+-------------------------------*/
+.education {
+	background: #ADB79C; /*Laurel Green*/
+	background: linear-gradient(rgba(255,239,213,0.8),
+															rgba(255,239,213,0.5)),
+							url(https://picsum.photos/1500/550?image=0) no-repeat fixed; /* fixed will keep the img fixed when scroll */
+	background-size: cover; /* bg pic now covers the viewport */				
+}
+p + h3 { /* select <h3> that is adjecent to (follows) <p>, note that first h3 is not selected */
+	margin-top: 30px;
+}
+
+/* Media Queries
+-------------------------------*/
+/* any resolution 900 or wider create 2 col styles 
+	 any resolution smaller; leave it at default stacking order in one column
+*/
+@media (min-width: 900px) { 
+	.col-narrow {
+		width: 30%; /* use % to be more flexible .col-narrow has child of content-wrap which has max-width: 950px */
+		float: left;
+		/* border: 1px solid black; */
+		/* min-hexight: 175px; */
+	}
+	.col-wide {
+		/* use % to be more flexible .col-wide has child of content-wrap which has max-width: 950px 
+		*/
+		width: 70%; 
+    /* can be same float left since col-narrow, col-wide add upto 100% doesn't matter both are left */
+		float: left;
+		padding-left: 20px;
+		/* border: 1px solid black; */
+		/* min-height: 175px; */ /* make sure both col-wide, col-narrow line up add min-height*/ 
+	}
+}
+/* center text and img in header when displayed in small screen, use different breakpoint than 900px since above @media uses it  */
+@media (max-width: 899px) {
+	header {
+		text-align: center;
+	}
+	.profile-img {
+		width: 200px; /* image smaller in smaller screen size */
+	}
+}
