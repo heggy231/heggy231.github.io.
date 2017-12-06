@@ -1,22 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-  <title>Heggy website is fun!</title>
-  <meta charset = "UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="icon" type="image/gif" href="https://cdn.glitch.com/57bc3237-9d5f-442e-88f6-04e92041b5f7%2FpikaRun.gif?1497030320530">
-
-
+		<!-- resource http://fontawesome.io/get-started/ generate my own embed code -->
+		<script src="https://use.fontawesome.com/1c08aec518.js"></script>
+    <meta charset="UTF-8">
+		<!-- support when viewing in mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heggy Castaneda | Resume</title>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Barlow:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header><h1 id="mainHeading">Welcome to my site!</h1> </header>
-    <div> <p> <a href="https://tropicalchancer.github.io/projectus/"> My FCC cohort website </a></P> </div>
-    <ul><li>I am team elephant.  </li></ul>
-    <footer><a href="mailto:heggyy@gmail.com?subject=Heggy, I love your website">Contact Heggy here</a></footer>
-    <script src="script.js"></script>
+    <!-- // Intro -->
+    <header id="about">
+			<!-- move download button before nav to make the nav higher z-index -->
+			<a href="resume.pdf" class="btn download" download target="_blank">Download Resume</a> 
+			<nav>
+				<a href="#about">About</a>
+				<a href="#work">Work Experience</a>
+				<a href="#education">Education</a>
+				<a href="#contact">Contact</a>
+			</nav>
+      <div class="content-wrap"><!-- new content wrap class to isolate styling only content -->
+        <img class="profile-img col-narrow" src="images/my-picture.jpg" alt="Heggy smile">
+        <div class="col-wide">
+					<h1>Heggy Castaneda</h1>
+					<h2>Software developer with a flair for intuitive user experience design</h2>
+						<p>As a developer, I specialize in creating modular and scalable front-end architectures.  I am passionate about social good and believe that user community is the largest asset that drives social impact.</p>
+						<p>As a developer, I specialize in creating modular and scalable front-end architectures.  I am passionate about social good and believe that user community is the largest asset that drives social impact.</p>
+				</div><!-- .col-wide -->
+			</div><!-- .content-wrap -->
+    </header>
+    
+    <main> 
+        <!-- // Work Experience -->
+        <section id="work" class="work">
+					<div class="content-wrap"><!-- new content wrap class to isolate styling only content -->
+            <h2>Work Experience</h2>
+
+
+						<!-- Job 1 Details -->
+						<div class="col-narrow">
+							<h3>Full-stack Developer</h3>
+							<p class="uppercase">Independent/Freelance</p>
+							<p>Jan 2017 - Present</p>
+						</div><!-- .col-narrow -->
+						
+						<div class="col-wide job-description">
+							<p>Provided various front-end, back-end related services ranging from development work, consultations, speaking engagements at Tech conference, developing user community.</p>
+						</div><!-- .col-wide -->
+						<!-- Job 2 Details -->
+						<div class="col-narrow">
+							<h3>Project Manager</h3>
+							<p class="uppercase">Journey</p>
+							<p>Nov 2016 - Dec 2016</p>
+						</div><!-- .col-narrow -->
+
+						<div class="col-wide job-description">
+							<p>Managed a team of software engineers in agile software development environment</p>
+						
+							<p>Key contributions:</p>
+							<ul>
+									<li>Created user stories</li>
+									<li>Lead software team to deliver iOS app</li>
+									<li>Responsible for implementing agile software development life cycle</li>
+                            </ul>
+                            
+							<p>Check out my complete work history on
+								<a class="work-link-color" href="https://www.linkedin.com/in/heggy/" target="_blank">LinkedIn</a>.
+              </p>
+						</div><!-- .col-wide -->
+            <!-- end of Job Details block. -->
+					</div><!-- content-wrap -->
+        </section>
+
+
+        <!-- // Education -->
+        <section id="education" class="education">
+					<div class="content-wrap">
+            <h2>Education</h2>
+
+            <!-- School details: copy this whole block to add more schools. -->
+							<!-- School 1 details. -->
+							<h3>UCSC-Ext - Sillion Valley, CA</h3>
+							<p>Internet programming certificate, 2017</p>
+							<p>Full-stack JavaScript framework courses.</p>	
+							<!-- School 2 details. -->
+							<h3>Cisco Skillzone - San Francisco, CA</h3>
+							<p>Business data analysis certificate, 2015  </p>
+							<p>10 months full-time program.</p>
+
+							<h3>UNC-Chapel Hill - Chapel Hill, NC</h3>
+							<p>B.S. in Mathematics Decision Science</p>
+							<ul>
+								<li>Science of mathematical modeling.</li>
+								<li>Statistical analysis.</li> 
+								<li>Mathematical optimization.</li>
+							</ul>
+							<!-- End of school details. -->
+
+					</div><!-- content-wrap -->
+        </section>
+    </main>
+    
+    <!-- // Footer & contact info -->
+    <footer id="contact">
+			<div class="content-wrap">
+        <h2>Let's Keep in Touch!</h2>
+        
+        <!-- Social media and contact links. Add or remove any networks. -->
+        <div class="contact-info">
+						<a href="mailto:heggyy@gmail.com">
+							<i class="fa fa-envelope-o" aria-hidden="true"></i>
+							<span class="sr-only">Email Heggy</span>
+						</a> | 
+						<a href="http://heggy.me" target="_blank">
+							<i class="fa fa-home" aria-hidden="true"></i>
+							<span class="sr-only">Heggy Home Page</span>
+						</a> | 
+						<a href="https://twitter.com/heggyhere" target="_blank">
+							<i class="fa fa-twitter" aria-hidden="true"></i>
+							<span class="sr-only">Twitter</span>
+						</a> | 
+						<a href="https://www.linkedin.com/in/heggy/" target="_blank">
+							<i class="fa fa-linkedin" aria-hidden="true"></i>
+							<span class="sr-only">LinkedIn</span>
+						</a> | 
+						<a href="https://www.facebook.com/heggyhere/" target="_blank">
+							<i class="fa fa-facebook" aria-hidden="true"></i>
+							<span class="sr-only">Facebook</span>
+						</a>
+        </div>
+
+				<p>Copyright 2017 by Heggy Castaneda</p>
+			</div>
+    </footer>
 </body>
 </html>
