@@ -160,6 +160,20 @@ h3 ~ p {
 }
 
 
+/* Project
+-------------------------------*/
+.project {
+	background: #ADB79C; /*Laurel Green*/
+	background: linear-gradient(rgba(255,239,213,0.8),
+															rgba(255,239,213,0.5)),
+							url(https://picsum.photos/1500/550?image=0) no-repeat fixed; /* fixed will keep the img fixed when scroll */
+	background-size: cover; /* bg pic now covers the viewport */				
+}
+.project a {
+	color: #480c0c;
+}
+
+
 /* Education
 -------------------------------*/
 .education {
@@ -183,7 +197,7 @@ p + h3 { /* select <h3> that is adjecent to (follows) <p>, note that first h3 is
 		width: 30%; /* use % to be more flexible .col-narrow has child of content-wrap which has max-width: 950px */
 		float: left;
 		/* border: 1px solid black; */
-		/* min-hexight: 175px; */
+		/* min-height: 175px; */
 	}
 	.col-wide {
 		/* use % to be more flexible .col-wide has child of content-wrap which has max-width: 950px 
