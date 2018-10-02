@@ -95,6 +95,11 @@ header h1, header h2 {
 /* header {
 	text-align: center;
 } */
+.downloadzip { /* d/l is part of button but specific just for this d/l */
+	position: absolute; /* position align link button d/l bottom right of header */
+	bottom: 0;
+	right: 127px;
+}
 .download { /* d/l is part of button but specific just for this d/l */
 	position: absolute; /* position align link button d/l bottom right of header */
 	bottom: 0;
