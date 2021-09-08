@@ -1,156 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-		<!-- resource http://fontawesome.io/get-started/ generate my own embed code -->
-		<script src="https://use.fontawesome.com/1c08aec518.js"></script>
-		<meta charset="UTF-8">
-		<link rel="icon" href="https://placekitten.com/16/16">
-		<!-- support when viewing in mobile -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <!-- resource http://fontawesome.io/get-started/ generate my own embed code -->
+    <script src="https://use.fontawesome.com/1c08aec518.js"></script>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./images/heggy-IconShort.png" />
+    <!-- support when viewing in mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Resume</title>
-		<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Barlow:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-	<!-- // Intro -->
-	<header id="about">
-		<!-- move download button before nav to make the nav higher z-index -->
-		<!-- <a href="#" class="btn downloadzip" download target="_blank">Download ZIP</a>
+    <link
+      href="https://fonts.googleapis.com/css?family=Amatic+SC|Barlow:400,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- // Intro -->
+    <header id="about">
+      <!-- move download button before nav to make the nav higher z-index -->
+      <!-- <a href="#" class="btn downloadzip" download target="_blank">Download ZIP</a>
 		<a href="resum.pdf" class="btn download" download target="_blank">Download PDF</a>  -->
-		<nav>
-			<a href="#about">About</a>
-			<a href="#project">Project</a>
-			<a href="#work">Work Experience</a>
-			<a href="#education">Education</a>
-			<a href="#contact">Contact</a>
-		</nav>
-		<div class="content-wrap"><!-- new content wrap class to isolate styling only content -->
-			<img class="profile-img col-narrow" src="images/my-picture.jpg" alt="Heggy smile">
-			<div class="col-wide">
-				<h1>Castaneda</h1>
-				<h2>Creative Technologist with a flair for intuitive user experience design</h2>
-					<p>I am passionate about social good and believe that sharing means caring.</p>
-			</div><!-- .col-wide -->
-		</div><!-- .content-wrap -->
-		</header>
-	
-	<main> 
+      <nav>
+        <a href="#about">About</a>
+        <a href="#project">Project</a>
+        <a href="#work">Work Experience</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="content-wrap">
+        <!-- new content wrap class to isolate styling only content -->
+        <img
+          class="profile-img col-narrow"
+          src="images/heggyFlower2021.png"
+          alt="Heggy smile"
+        />
+        <div class="col-wide">
+          <h1>Heggy Castañeda</h1>
+          <h2>
+            Creative Technologist with interest in REST API, PERN stack
+            (Postgres, ExpressJS, React, NodeJS)
+          </h2>
+          <p>
+            I am passionate about social good and believe that sharing means
+            caring.
+          </p>
+        </div>
+        <!-- .col-wide -->
+      </div>
+      <!-- .content-wrap -->
+    </header>
 
-		<!-- // Education class style same as education with laptop background -->
-		<section id="project" class="project">
-			<div class="content-wrap">
-				<h2>Project</h2>
-				<!--  details: copy this whole block to add more schools. -->
-					<!-- project 1 detail -->
-					<h3><a class="project-link-color" href="https://github.com/heggy231/phpContactMe/blob/master/README.md" target="_blank">JS Conference Talk:</a> a place where users could watch videos and submit a contact form.</h3>
-					<ul>
-						<li>User-friendly feature: form auto-clear, sticky form.</li>
-						<li>RegEx Form validation.</li>
-						<li>Web security feature: preventing cross-site scripting (XSS) attack by scrubbing data with scrubInput function.</li>
-					</ul>
+    <main>
+      <!-- // Education class style same as education with laptop background -->
+      <section id="project" class="project">
+        <div class="content-wrap">
+          <h2>Project</h2>
+          <!--  details: copy this whole block to add more schools. -->
 
-					<!-- project 2 detail -->
-					<h3><a class="project-link-color" href="http://heggy.me/parallax/" target="_blank">Parallax:</a> a fun project that uses Math to manipulate images' position.</h3>
-					<ul>
-						<li>CSS absolute positioning using viewport width and height.</li>
-						<li>When the window loads jQuery's .mousemove() method listens for movement of the mouse. This calls mouseMove() function which gives parallax effect.</li>
-					</ul>
+          <!-- project 0 detail -->
+          <h3>
+            <a
+              class="project-link-color"
+              href="http://heggy.me/movieDB-my-favorite-movie-stars/"
+              target="_blank"
+              >MovieDB Rest API</a
+            >
+            Look up my favorite actor's list of movies and compare who played in
+            most movies.
+          </h3>
+          <ul>
+            <li>
+              Graceful asynchronous programming using Fetch, Async/Await,
+              Promises, Error Handling
+            </li>
+            <li>
+              Create helper functions that does one thing well and one thing
+              only. This modularized code and reduce redundancy.
+            </li>
+          </ul>
 
+          <!-- project 1 detail -->
+          <h3>
+            <a
+              class="project-link-color"
+              href="https://github.com/heggy231/phpContactMe/blob/master/README.md"
+              target="_blank"
+              >JS Conference Talk:</a
+            >
+            a place where users could watch videos and submit a contact form.
+          </h3>
+          <ul>
+            <li>User-friendly feature: form auto-clear, sticky form.</li>
+            <li>RegEx Form validation.</li>
+            <li>
+              Web security feature: preventing cross-site scripting (XSS) attack
+              by scrubbing data with scrubInput function.
+            </li>
+          </ul>
 
-					<!-- project 3 detail -->
-					<h3><a class="project-link-color" href="http://heggy.me/yelpEatV1" target="_blank">YelpEat:</a> a restaurant review web app that incorporates accessibility ("a11y") for diverse users for diverse screen sizes with various network speeds.</h3>
-					<ul>
-						<li>Read an existing code base and add new features ie: Responsive for any viewport displays, color contrast checker by Webaim.</li>
-						<li>Increase performance of the site by registering service worker</li>
-						<li>Make the site accessible by adding ARIA roles, skip to main link, ALT Text for images</li>
-					</ul>
-			</div><!-- education content-wrap -->
-		</section><!-- End of EDUCATION ######################## -->
-			<!-- // Work Experience -->
-		<section id="work" class="work">
-			<div class="content-wrap"><!-- new content wrap class to isolate styling only content -->
-				<h2>Work Experience</h2>
+          <!-- project 2 detail -->
+          <h3>
+            <a
+              class="project-link-color"
+              href="http://heggy.me/parallax/"
+              target="_blank"
+              >Parallax:</a
+            >
+            a fun project that uses Math to manipulate images' position.
+          </h3>
+          <ul>
+            <li>CSS absolute positioning using viewport width and height.</li>
+            <li>
+              When the window loads jQuery's .mousemove() method listens for
+              movement of the mouse. This calls mouseMove() function which gives
+              parallax effect.
+            </li>
+          </ul>
 
+          <!-- project 3 detail -->
+          <h3>
+            <a
+              class="project-link-color"
+              href="http://heggy.me/yelpEatV1"
+              target="_blank"
+              >YelpEat:</a
+            >
+            a restaurant review web app that incorporates accessibility ("a11y")
+            for diverse users for diverse screen sizes with various network
+            speeds.
+          </h3>
+          <ul>
+            <li>
+              Read an existing code base and add new features ie: Responsive for
+              any viewport displays, color contrast checker by Webaim.
+            </li>
+            <li>
+              Increase performance of the site by registering service worker
+            </li>
+            <li>
+              Make the site accessible by adding ARIA roles, skip to main link,
+              ALT Text for images
+            </li>
+          </ul>
+        </div>
+        <!-- education content-wrap -->
+      </section>
+      <!-- End of EDUCATION ######################## -->
+      <!-- // Work Experience -->
+      <section id="work" class="work">
+        <div class="content-wrap">
+          <!-- new content wrap class to isolate styling only content -->
+          <h2>Work Experience</h2>
 
-				<!-- Job 1 Details -->
-				<div class="col-narrow">
-					<h3>Front End Developer</h3>
-					<p class="uppercase">Gap</p>
-					<p>May 2019 - Feb 2020</p>
-				</div><!-- .col-narrow -->
-				
-				<div class="col-wide job-description">
-					<ul>
-						<li>Built reusable React components design system library with Storybook in an agile team.</li>
-					</ul>
-				</div><!-- .col-wide -->
-				<!-- Job 2 Details -->
-				<div class="col-narrow">
-					<h3>Freelance Web Developer</h3>
-					<p class="uppercase">Freelance Web Development</p>
-					<p>Jan 2019 - May 2019</p>
-				</div><!-- .col-narrow -->
+          <!-- Job 1 Details -->
+          <div class="col-narrow">
+            <h3>Front End Developer</h3>
+            <p class="uppercase">Gap</p>
+            <p>May 2019 - Feb 2020</p>
+          </div>
+          <!-- .col-narrow -->
 
-				<div class="col-wide job-description">
-				<ul>
-					<li>Developed mobile-first responsive small business lawn care website.</li>
-					<li>Grew customer base by setting up social media presence on Yelp.</li>
-				</ul>
-												
-					<p>Check out my complete work history on
-						<a class="work-link-color" href="https://www.linkedin.com/in/heggy/" target="_blank">LinkedIn</a>.
-					</p>
-				</div><!-- .col-wide -->
-				<!-- end of Job Details block. -->
-			</div><!-- content-wrap -->
-		</section><!-- // END of Work experience ########################-->
+          <div class="col-wide job-description">
+            <ul>
+              <li>
+                Built reusable React components design system library with
+                Storybook in an agile team.
+              </li>
+            </ul>
+          </div>
+          <!-- .col-wide -->
+          <!-- Job 2 Details -->
+          <div class="col-narrow">
+            <h3>Freelance Web Developer</h3>
+            <p class="uppercase">Freelance Web Development</p>
+            <p>Jan 2019 - May 2019</p>
+          </div>
+          <!-- .col-narrow -->
 
+          <div class="col-wide job-description">
+            <ul>
+              <li>
+                Developed mobile-first responsive small business lawn care
+                website.
+              </li>
+              <li>
+                Grew customer base by setting up social media presence on Yelp.
+              </li>
+            </ul>
 
-			<!-- // Education -->
-		<section id="education" class="education">
-			<div class="content-wrap">
-				<h2>Education</h2>
-				<!-- School details: copy this whole block to add more schools. -->
-					<!-- School 1 details. -->
-					<h3>UCSC-Ext at Silicon Valley, CA</h3>
-					<p>Internet programming certificate, 2018</p>
-					<p>JavaScript frameworks</p>	
-					<!-- School 2 details. -->
-					<h3>Cisco SkillZone - San Francisco, CA</h3>
-					<p>Business data analysis certificate, 2015</p>
-					<p>10 months full-time program.</p>
+            <p>
+              Check out my complete work history on
+              <a
+                class="work-link-color"
+                href="https://www.linkedin.com/in/heggy/"
+                target="_blank"
+                >LinkedIn</a
+              >.
+            </p>
+          </div>
+          <!-- .col-wide -->
+          <!-- end of Job Details block. -->
+        </div>
+        <!-- content-wrap -->
+      </section>
+      <!-- // END of Work experience ########################-->
 
-			</div><!-- education content-wrap -->
-		</section><!-- End of EDUCATION ######################## -->
-	</main>
-	
-	<!-- // Footer & contact info -->
-	<footer id="contact">
-		<div class="content-wrap">
-			<h2>Let's Keep in Touch!</h2>
-			
-			<!-- Social media and contact links. Add or remove any networks. -->
-			<div class="contact-info">
-				<a href="mailto:hk21cast@gmail.com">
-					<i class="fa fa-envelope-o" aria-hidden="true"></i>
-					<span class="sr-only">Email Me</span>
-				</a> | 
-				<a href="http://heggy.me" target="_blank">
-					<i class="fa fa-home" aria-hidden="true"></i>
-					<span class="sr-only">Heggy Home Page</span>
-				</a> | 
-				<a href="https://twitter.com/CastahHere" target="_blank">
-					<i class="fa fa-twitter" aria-hidden="true"></i>
-					<span class="sr-only">Twitter</span>
-				</a> | 
-				<a href="https://www.linkedin.com/in/castah/" target="_blank">
-					<i class="fa fa-linkedin" aria-hidden="true"></i>
-					<span class="sr-only">LinkedIn</span>
-				</a>
-			</div>
+      <!-- // Education -->
+      <section id="education" class="education">
+        <div class="content-wrap">
+          <h2>Education</h2>
+          <!-- School details: copy this whole block to add more schools. -->
+          <!-- School 0 details. -->
+          <h3>Digital Craft</h3>
+          <p>Fullstack certificate, Aug 2021</p>
+          <p>Modern JavaScript Framework: PERN Stack</p>
+          <!-- School 1 details. -->
+          <h3>UCSC-Ext at Silicon Valley, CA</h3>
+          <p>Internet programming certificate, 2018</p>
+          <p>JavaScript frameworks</p>
+          <!-- School 2 details. -->
+          <h3>UNC-Chapel Hill</h3>
+          <p>B.S. in Mathematics Decision Science</p>
+          <p>Operations Research, Statistics, Linear Algebra</p>
+        </div>
+        <!-- education content-wrap -->
+      </section>
+      <!-- End of EDUCATION ######################## -->
+    </main>
 
-			<p>Copyright 2021 by Castaneda</p>
-		</div>
-	</footer>
-</body>
+    <!-- // Footer & contact info -->
+    <footer id="contact">
+      <div class="content-wrap">
+        <h2>Let's Keep in Touch!</h2>
+
+        <!-- Social media and contact links. Add or remove any networks. -->
+        <div class="contact-info">
+          <a href="mailto:hk21cast@gmail.com">
+            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            <span class="sr-only">Email Me</span>
+          </a>
+          |
+          <a href="http://heggy.me" target="_blank">
+            <i class="fa fa-home" aria-hidden="true"></i>
+            <span class="sr-only">Heggy Home Page</span>
+          </a>
+          |
+          <a href="https://twitter.com/CastahHere" target="_blank">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <span class="sr-only">Twitter</span>
+          </a>
+          |
+          <a href="https://www.linkedin.com/in/castah/" target="_blank">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+            <span class="sr-only">LinkedIn</span>
+          </a>
+        </div>
+
+        <p>Copyright 2021 by Castaneda</p>
+      </div>
+    </footer>
+  </body>
 </html>
